@@ -1,4 +1,4 @@
-import StepForm from './pages/BankDetails'
+import StepForm from './pages/StepForm'
 
 function App() {
   return (
