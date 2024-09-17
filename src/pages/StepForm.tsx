@@ -337,24 +337,16 @@ const StepForm = () => {
             </div>
           )}
 
-          {currentStep === 6 && (
-            <div>
-              <h2 className="text-xl mb-4">Overview</h2>
-              <p>Check your details before submission</p>
-              <ul className="list-disc">
-                <li>Business Address: {formData.businessAddress}</li>
-                <li>Business Type: {formData.businessType}</li>
-                <li>Address Line 1: {formData.addressLine1}</li>
-                <li>Address Line 2: {formData.addressLine2}</li>
-                <li>City: {formData.city}</li>
-                <li>Zip: {formData.zip}</li>
-                <li>Industry: {formData.industry}</li>
-                <li>Website: {formData.website}</li>
-                <li>Currency: {formData.currency}</li>
-                <li>IBAN: {formData.iban}</li>
-                <li>Phone Number: {formData.phoneNumber}</li>
-                <li>Authentication Code: {formData.authCode}</li>
-              </ul>
+{currentStep === 6 && (
+            <div className="w-96">
+              <h2 className="text-xl mb-4">Business details</h2>
+
+              <input
+                name="addressLine1"
+                placeholder="Missing required business information"
+                onChange={handleChange}
+                className="border rounded-xl w-full mb-4 p-2"
+              />
             </div>
           )}
 
