@@ -63,7 +63,108 @@ const StepForm = () => {
       <div className="flex justify-between">
         <div className="w-1/4">
           <ul className="timeline timeline-vertical">
-            {/* Timeline items */}
+          <ul className="timeline timeline-vertical">
+            <li>
+              <div className="timeline-middle">
+                <div
+                  className={
+                    currentStep >= 1
+                      ? "h-6 w-6 border-2 text-center flex justify-center items-center rounded-2xl bg-lime-600 text-gray-50"
+                      : ""
+                  }
+                >
+                  1
+                </div>
+              </div>
+              <div className="timeline-end timeline-box">
+                {" "}
+                Business structure
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <div
+                  className={
+                    currentStep >= 2
+                      ? "w-2.5 h-2.5 text-center flex justify-center items-center rounded-md bg-emerald-400 "
+                      : "w-2.5 h-2.5 text-center flex justify-center items-center rounded-md bg-slate-600"
+                  }
+                >
+                  .
+                </div>
+              </div>
+              <div className="timeline-end timeline-box">
+                Business representative
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <div
+                  className={
+                    currentStep >= 3
+                      ? "w-2.5 h-2.5 text-center flex justify-center items-center rounded-md bg-blue-600 "
+                      : "w-2.5 h-2.5 text-center flex justify-center items-center rounded-md bg-slate-600"
+                  }
+                >
+                  .
+                </div>
+              </div>
+              <div className="timeline-end timeline-box">Business details</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <div
+                  className={
+                    currentStep >= 4
+                      ? "h-6 w-6 border-2 text-center flex justify-center items-center rounded-2xl bg-lime-600 text-gray-50"
+                      : "h-6 w-6 border-2 text-center flex justify-center items-center rounded-2xl  text-black"
+                  }
+                >
+                  2
+                </div>
+              </div>
+              <div className="timeline-end timeline-box">Bank details</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <div
+                  className={
+                    currentStep >= 5
+                      ? "h-6 w-6 border-2 text-center flex justify-center items-center rounded-2xl bg-lime-600 text-gray-50"
+                      : "h-6 w-6 border-2 text-center flex justify-center items-center rounded-2xl  text-black"
+                  }
+                >
+                  3
+                </div>
+              </div>
+              <div className="timeline-end timeline-box">
+                2 step authentication
+              </div>
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <div
+                  className={
+                    currentStep >= 6
+                      ? "h-6 w-6 border-2 text-center flex justify-center items-center rounded-2xl bg-lime-600 text-gray-50"
+                      : "h-6 w-6 border-2 text-center flex justify-center items-center rounded-2xl  text-black"
+                  }
+                >
+                  4
+                </div>
+              </div>
+              <div className="timeline-end timeline-box">Overview</div>
+            </li>
+          </ul>
           </ul>
         </div>
         <div className="w-1/2 border p-4">
